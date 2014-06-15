@@ -21,6 +21,7 @@
 		65867AD9194D111B00279225 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65867ABB194D111A00279225 /* UIKit.framework */; };
 		65867AE1194D111B00279225 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65867ADF194D111B00279225 /* InfoPlist.strings */; };
 		65867AE3194D111B00279225 /* LoginSampleFBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65867AE2194D111B00279225 /* LoginSampleFBTests.m */; };
+		65867AED194D1C8A00279225 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65867AEC194D1C8A00279225 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		65867ADE194D111B00279225 /* LoginSampleFBTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginSampleFBTests-Info.plist"; sourceTree = "<group>"; };
 		65867AE0194D111B00279225 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65867AE2194D111B00279225 /* LoginSampleFBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginSampleFBTests.m; sourceTree = "<group>"; };
+		65867AEC194D1C8A00279225 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65867ABA194D111A00279225 /* CoreGraphics.framework in Frameworks */,
+				65867AED194D1C8A00279225 /* FacebookSDK.framework in Frameworks */,
 				65867ABC194D111A00279225 /* UIKit.framework in Frameworks */,
 				65867AB8194D111A00279225 /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +104,7 @@
 		65867AB6194D111A00279225 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				65867AEC194D1C8A00279225 /* FacebookSDK.framework */,
 				65867AB7194D111A00279225 /* Foundation.framework */,
 				65867AB9194D111A00279225 /* CoreGraphics.framework */,
 				65867ABB194D111A00279225 /* UIKit.framework */,
@@ -376,6 +380,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/fcalise/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginSampleFB/LoginSampleFB-Prefix.pch";
 				INFOPLIST_FILE = "LoginSampleFB/LoginSampleFB-Info.plist";
@@ -389,6 +397,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/fcalise/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginSampleFB/LoginSampleFB-Prefix.pch";
 				INFOPLIST_FILE = "LoginSampleFB/LoginSampleFB-Info.plist";
