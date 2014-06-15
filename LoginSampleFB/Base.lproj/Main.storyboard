@@ -42,6 +42,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOq-4z-pKj">
+                                <rect key="frame" x="20" y="273" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnK-vv-4L8">
+                                <rect key="frame" x="20" y="302" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yqm-zk-cPN" customClass="FBLoginView">
                                 <rect key="frame" x="60" y="430" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -52,7 +66,9 @@
                     </view>
                     <connections>
                         <outlet property="lblEmail" destination="GAG-bU-bRb" id="0FH-Dr-XBf"/>
+                        <outlet property="lblHometown" destination="KnK-vv-4L8" id="yZj-P1-BK6"/>
                         <outlet property="lblLoginStatus" destination="vrA-X7-CwC" id="hw5-JI-DTa"/>
+                        <outlet property="lblName" destination="BOq-4z-pKj" id="x21-7Q-NzU"/>
                         <outlet property="lblUsername" destination="N2J-U8-d3c" id="U55-Lm-QCL"/>
                         <outlet property="loginButton" destination="yqm-zk-cPN" id="gqW-N5-Rcx"/>
                         <outlet property="profilePicture" destination="3Ux-Q3-yQP" id="U9F-3C-vfr"/>

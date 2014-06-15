@@ -23,7 +23,7 @@
     
     [self toggleHiddenState:YES];
     self.lblLoginStatus.text = @"";
-    self.loginButton.readPermissions = @[@"public_profile", @"email"];
+    self.loginButton.readPermissions = @[@"public_profile", @"email", @"user_hometown"];
     
     self.loginButton.delegate = self;
 }
@@ -39,6 +39,8 @@
     self.lblUsername.hidden = shouldHide;
     self.lblEmail.hidden = shouldHide;
     self.profilePicture.hidden = shouldHide;
+    self.lblHometown.hidden = shouldHide;
+    self.lblName.hidden = shouldHide;
 }
 
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView
@@ -54,6 +56,8 @@
     self.profilePicture.profileID = user.objectID;
     self.lblUsername.text = user.name;
     self.lblEmail.text = [user objectForKey:@"email"];
+    self.lblName.text = [NSString stringWithFormat:@"%@ %@", user.first_name, user.last_name];
+    self.lblHometown.text = [[user objectForKey:@"hometown"] objectForKey:@"name"];
 }
 
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView
